@@ -12,7 +12,7 @@ int main()
     n = s1.size();
     m = s2.size();
 
-    k = max(s1.size(), s2.size()) + 1;
+    k = max(n, m) + 1;
 
     int c[k];
     int a[k];
