@@ -24,13 +24,8 @@ int main()
         b[i] = 0;
     }
 
-    for (int i = 0; i < n; i++) {
-        a[n - i - 1] = atoi(s1.substr(i, 1).c_str());
-    }
-
-    for (int i = 0; i < m; i++) {
-        b[m - i - 1] = atoi(s2.substr(i, 1).c_str());
-    }
+    for (int i = 0; i < n; i++) a[n - i - 1] = atoi(s1.substr(i, 1).c_str());
+    for (int i = 0; i < m; i++) b[m - i - 1] = atoi(s2.substr(i, 1).c_str());
 
     for (int i = 0; i < k; i++) {
         c[i] = a[i] + b[i] + c[i];
@@ -41,13 +36,9 @@ int main()
         }
     }
 
-    if (c[k - 1] == 0) {
-        k -= 1;
-    }
+    if (c[k - 1] == 0) k--;
 
-    for (int i = k - 1; i >= 0; i--) {
-        cout << c[i];
-    }
+    for (int i = k - 1; i >= 0; i--) cout << c[i];
 
     return 0;
 }
