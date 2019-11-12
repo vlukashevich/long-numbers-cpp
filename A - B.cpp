@@ -25,8 +25,6 @@ int main()
                     string t = s1;
                     s1 = s2;
                     s2 = t;
-                    n = s1.size();
-                    m = s2.size();
                     cout << "-";
                 }
                 break;
